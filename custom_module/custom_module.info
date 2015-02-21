@@ -1,0 +1,12 @@
+name = Custom Module
+description = Custom Module Description.
+package = Custom 
+version = VERSION
+core = 7.x
+
+
+; Information added by Drupal.org packaging script on 2014-11-19
+version = "1.1"
+project = "Custom"
+datestamp = "1416429488"
+

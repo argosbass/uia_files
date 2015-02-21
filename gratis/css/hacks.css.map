@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "hacks.css",
+	"sources": [
+		"../source/sass/hacks.scss"
+	],
+	"sourcesContent": [],
+	"mappings": "AACA;EAAA,UAAU;IAEN,SAAS;;EAGb,KAAK,IAAI,UAAU,KAAK,IAAI;IAEtB,aAAa;IACb,YAAY",
+	"names": []
+}

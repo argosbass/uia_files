@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * @file
+ * Enables the use of personal and site-wide login forms.
+ */
+
+/**
+ * Implements hook_form_alter().
+ *
+ * Add the validation term on login form
+ *
+ * @see user_profile_form()
+ */
+function custom_module_form_alter(&$form, &$form_state,$form_id) {
+   if ($form_id == 'user_login_block' || $form_id == 'user_login') {
+
+     $form['contact'] = array(
+      '#type' => 'fieldset',
+      '#title' => t('Contact settings'),
+      '#weight' => 2,
+      '#collapsible' => TRUE,
+    );
+    $form['contact']['contact'] = array(
+      '#type' => 'checkbox',
+      '#title' => t('Personal contact form'),
+      '#default_value' => FALSE,
+      '#description' => t('Allow other users to contact you via a personal email.'),
+    );
+  }
+}
